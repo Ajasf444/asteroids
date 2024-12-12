@@ -40,6 +40,7 @@ def main():
                 if asteroid.collides_with(shot):
                     asteroid.kill()
                     shot.kill()
+                    asteroid.split()
 
         screen.fill(color = (0, 0, 0))
 
